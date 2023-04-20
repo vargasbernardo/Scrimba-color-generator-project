@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="index.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+            <title>Color Palette</title>
+        </head>
+        <body>
+            <div>
+                <nav class="nav-bar">
+                    <input id="chosen-color" type="color" />
+                    <select id="options" name="scheme-type">
+                            <option value="monochrome">Monochrome</option>
+                            <option value="monochrome-dark">Monochrome-dark</option>
+                            <option value="monochrome-light">Monochrome-light</option>
+                            <option value="analogic">Analogic</option>
+                            <option value="complement">Complement</option>
+                            <option value="analogic-complement">Analogic-complement</option>
+                            <option value="triad">Triad</option>
+                    </select>
+                    <button type="submit" id="btn">Get color scheme</button>
+                </nav>
+                <div id="colors-grid">
+                    <div id="color-1" class="grid-item"></div>
+                    <div id="color-2" class="grid-item"></div>
+                    <div id="color-3" class="grid-item"></div>
+                    <div id="color-4" class="grid-item"></div>
+                    <div id="color-5" class="grid-item"></div>
+                    <!-- <div id="color-6" class="grid-item"></div>
+                    <div id="color-7" class="grid-item"></div> -->
+                </div>
+                <footer>
+                    <p class="hex-values" id="color-1-hex"></p>
+                    <p class="hex-values" id="color-2-hex"></p>
+                    <p class="hex-values" id="color-3-hex"></p>
+                    <p class="hex-values" id="color-4-hex"></p>
+                    <p class="hex-values" id="color-5-hex"></p>
+                    <!-- <p class="hex-values">#FFFFFF</p>
+                    <p class="hex-values">#FFFFFF</p> -->
+                </footer>
+                </div>
+            <script src="index.js"></script>
+        </body>
+    </html>
